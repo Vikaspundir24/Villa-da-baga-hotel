@@ -1,0 +1,294 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+#Heading {
+    display: flex;
+    color: white;
+    background-color: rgb(0, 0, 0, .7);
+
+}
+
+
+.name {
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 100vw;
+
+}
+
+.name h1 {
+    font-family: 'Mansalva', cursive;
+    font-size: 50px;
+}
+
+.details {
+    margin-left: 30px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.details a {
+    color: white;
+}
+
+.details a:hover {
+    transform: scale(1.5);
+}
+
+body {
+    background-image: url(images/bedroom.jpg);
+    background-repeat: repeat;
+    backdrop-filter: blur(.2px);
+    background-color: rgb(218, 252, 186);
+    height: 100vh;
+
+
+}
+
+#navbar {
+
+    display: flex;
+    color: white;
+    position: relative;
+    background-color: rgb(0, 0, 0, .7);
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+#navbar img {
+    background-color: rgb(255, 255, 255, .9);
+    height: 80px;
+    width: 80px;
+    margin: 3px 6px;
+    border-radius: 50%;
+}
+
+#navbar a {
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    Display: flex;
+}
+
+#navbar a {
+    list-style: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin: 12px;
+    padding: 5px 50px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, .8);
+    transition: .5s;
+}
+
+#navbar a:hover {
+    color: blue;
+    transform: translateY(-4px);
+
+}
+
+#navbar .nav2 {
+    opacity: .4;
+}
+
+#about {
+    padding: 40px;
+    background-color: rgb(8, 2, 2);
+    color: white;
+    margin: 20px;
+    border-radius: 30px;
+
+}
+
+.inside {
+    display: flex;
+}
+
+#about i {
+    font-size: 50px;
+    padding-top: 15px;
+}
+
+#about h2 {
+    font-size: 50px;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h2 span {
+    font-family: 'Mansalva', cursive;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+#about p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* media queries */
+
+@media only screen and (max-width:767px) {
+
+
+
+
+    body {
+        display: block;
+        align-items: center;
+    }
+
+    .name h1 {
+        font-size: 30px;
+    }
+
+    .details a {
+        font-size: 15px;
+    }
+
+    .details p {
+        font-size: 10px;
+    }
+
+    #navbar img {
+        height: 0px;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar {
+        padding: 0;
+        height: 350px;
+    }
+
+    #navbar a {
+        opacity: 1;
+        font-size: 15px;
+    }
+
+    #navbar a {
+        margin: 10px;
+        opacity: 1;
+        font-size: 15px;
+    }
+
+    #about {
+        margin: 10px;
+        padding: 30px ;
+        display: block;
+        text-align: center;
+    }
+
+    .inside {
+        font-size: 5px;
+        display: block;
+    }
+    #about i{
+        font-size: 25px;
+    }
+
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #about h2 span {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+}
+
+/* Media  queries for Tablet*/
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px)
+{
+
+
+
+
+    body {
+        display: block;
+        align-items: center;
+    }
+
+    .name h1 {
+        font-size: 30px;
+    }
+
+    .details a {
+        font-size: 15px;
+    }
+
+    .details p {
+        font-size: 10px;
+    }
+
+    #navbar img {
+        height: 0px;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar {
+        padding: 0;
+        height: 350px;
+    }
+
+    #navbar a {
+        opacity: 1;
+        font-size: 15px;
+    }
+
+    #navbar a {
+        margin: 10px;
+        opacity: 1;
+        font-size: 15px;
+    }
+
+    #about {
+        margin: 10px;
+        padding: 30px display: block;
+        text-align: center;
+    }
+
+    .inside {
+        font-size: 5px;
+        display: block;
+    }
+    #about i{
+        font-size: 25px;
+    }
+
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #about h2 span {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+}
